@@ -5,7 +5,7 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Title>Optionable</Title>
-    <Version>0.1.1</Version>
+    <Version>0.2.1</Version>
     <Authors>Hakan Uçar</Authors>
     <Description>Add options to your classes</Description>
     <PackageProjectUrl>https://github.com/HakanUcaar/Optionable</PackageProjectUrl>
