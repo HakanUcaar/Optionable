@@ -10,7 +10,7 @@ Option defining
 ``` csharp
   public class AttributeOption : IOption
   {
-      public bool UseAttribute { get; set; } = false;
+      public bool UseNotNullAttribute { get; set; } = false;
   }
 ```
 
