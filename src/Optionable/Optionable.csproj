@@ -4,7 +4,24 @@
     <TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>Optionable</Title>
+    <Version>0.1.1</Version>
+    <Authors>Hakan Uçar</Authors>
+    <Description>Add options to your classes</Description>
+    <PackageProjectUrl>https://github.com/HakanUcaar/Optionable</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/HakanUcaar/Optionable</RepositoryUrl>
+    <PackageTags>option;options:optionable</PackageTags>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />

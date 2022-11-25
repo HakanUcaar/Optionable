@@ -23,7 +23,7 @@ namespace Optionable
 
             return source;
         }
-        public static T GetOption<T>(this IOptionable source) where T : IOption
+        public static T? GetOption<T>(this IOptionable source) where T : IOption
         {
             if (source is null)
             {
@@ -32,12 +32,7 @@ namespace Optionable
 
             var option = source.Options.FirstOrDefault(x => x.GetType() == typeof(T));
 
-            if (option is null)
-            {
-                throw new ArgumentNullException(nameof(T));
-            }
-
-            return (T)option;
+            return option is null ? default(T) : (T)option;
         }
         public static IOptionable Configure<T>(this IOptionable source, IConfigurationSection section) where T : IOption
         {
