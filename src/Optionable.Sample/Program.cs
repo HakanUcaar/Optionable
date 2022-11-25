@@ -10,7 +10,7 @@ namespace Optionable.Sample
         {
             Customer customer = new Customer();
             CustomerValidator validator = new CustomerValidator();
-            validator.AddOption<AttributeOption>(opt => opt.UseAttribute = true);
+            validator.AddOption<AttributeOption>(opt => opt.UseNotNullAttribute = true);
 
             ValidationResult results = validator.Validate(customer);
 

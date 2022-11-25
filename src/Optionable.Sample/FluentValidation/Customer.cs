@@ -12,6 +12,8 @@ namespace Optionable.Sample
         public int Id { get; set; }
         [NotNull]
         public string Surname { get; set; }
+        [NotNull]
+        [WithMessage("Please specify a first name")]
         public string Forename { get; set; }
         public decimal Discount { get; set; }
         [NotNull]
