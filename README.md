@@ -1,5 +1,5 @@
 # Optionable
-Add options pattern to your project
+Add option ability to your class
 
 ## Sample
 
